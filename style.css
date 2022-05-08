@@ -1,0 +1,95 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css");
+/* boostrap 5 */
+@import url("https://use.typekit.net/wqd5xqs.css");
+/* adobe fonts */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css");
+/* animate css usage: animate__animated -animacion- https://animate.style/ */
+
+*{
+    font-family: futura-pt, sans-serif;
+}
+
+body {
+    background-color: aquamarine;
+}
+
+h1 {
+    font-size: 5.4rem;
+}
+
+h2 {
+    font-size: 3.4rem;
+}
+
+h3 {
+    font-size: 2.4rem;
+}
+
+p {
+    font-size: 1.4rem;
+}
+
+.bkWhite {
+    background-color: #FFF;
+    color: #000;
+}
+
+.bkBlue {
+    background-color: #0B109F;
+    color: #FFF;
+}
+
+.bkOrange {
+    background-color: #FC5000;
+    color: #FFF;
+}
+
+.bkGrey {
+    background-color: #D8D8D8;
+    color: #000;
+}
+
+.bkDarkGrey {
+    background-color: #5D5D5D;
+    color: #FFF;
+}
+
+.gradientBlueOrange {
+    background: #0B109F;
+    background: linear-gradient(180deg, #0B109F 30%, #FC5000 100%);
+    padding: 1rem;
+}
+
+.gradientOrangeWhite {
+    background: #FC5000;
+    background: linear-gradient(180deg, #FC5000 34%, #FFF 98%, #FFF 100%);
+    padding: 1rem;
+}
+
+.gradientWhiteBlue {
+    background: #0B109F;
+    background: linear-gradient(0deg, #0B109F 34%, #FFF 98%, #FFF 100%);
+    padding: 1rem;
+}
+
+.gradientOrangeGrey {
+    background: #FC5000;
+    background: linear-gradient(180deg, #FC5000 34%, #D8D8D8 98%, #D8D8D8 100%);
+    padding: 1rem;
+}
+
+.container {
+    padding: 1rem;
+}
+
+.box {
+    padding: 1rem 1rem 15rem 1rem;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    box-shadow: 0px 0px 4rem 0px rgb(0 0 0 / 10%);
+    border: transparent;
+    border-radius: 5%;
+    max-width: 25rem;
+}
+
+
