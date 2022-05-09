@@ -11,29 +11,66 @@
     <link rel="stylesheet" href="style.css">
 
 
-
 </head>
 
 <body>
-    <nav class="bkOrange">
 
-        <!-- NavBar -->
+    <!-- NavBar -->
+    <nav class="navbar">
         <div class="container">
-           
-            
+
+            <div class="logo-container">
+                <a href="#home">
+                    <img class="logo-image" src="img/logo.png" alt="logo">
+                </a>
+            </div>
+
+            <ul id="nav-list" class="nav-menu">
+                <li class="menu-item">
+                    <a href="#news" rel="noopener noreferrer">NOVEDADES</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#empresa" rel="noopener noreferrer">EMPRESA</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#marcas" rel="noopener noreferrer">MARCAS</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#contacto" rel="noopener noreferrer">CONTACTO</a>
+                </li>
+
+                <li class="menu-item">
+                    <a class="btn btn-primary" href="http://b2c.ig-sa.com.ar" target="_blank" role="button">INGRESO</a>
+                </li>
+
+            </ul>
+
+
+            <div id="nav-toggle" class="menu-icon">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+
         </div>
-
-        <!-- /NavBar -->
-
     </nav>
 
+    <script>
+        var tglbtn = document.getElementById("nav-toggle");
+        var navlst = document.getElementById("nav-list")
+        tglbtn.addEventListener('click', () => { navlst.classList.toggle("active"); });
+    </script>
 
-    <section id="home" class="bkBlue">
+    <!-- /NavBar -->
+
+
+
+    <header id="home" class="bkBlue">
         <div class="container">
             <p>logo + nombre</p>
         </div>
 
-    </section>
+    </header>
 
     <div class="gradientBlueOrange">
         <br>
