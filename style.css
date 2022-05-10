@@ -5,6 +5,12 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css");
 /* animate css usage: animate__animated -animacion- https://animate.style/ */
 
+@import url("https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css");
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css");
+
+
+
 * {
     font-family: futura-pt, sans-serif;
 }
@@ -293,15 +299,43 @@ p {
 
 
 /* contador */
-#contador{
+#contador {
     text-align: center;
 }
 
-.counter{
+.counter {
     text-align: center;
     font-size: 100px;
-  }
+}
 
 /* end contador */
 
+/* owl carousel */
+.section-padding {
+    padding: 1rem 0;
+}
 
+.brand-carousel {
+    /*background: aliceblue;*/
+    margin-top: 0%;
+}
+
+/*  
+.owl-dots {
+    text-align: center;
+    margin-top: 4%;
+}
+
+.owl-dot {
+    display: inline-block;
+    height: 15px !important;
+    width: 15px !important;
+    background-color: #878787 !important;
+    opacity: 0.8;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+.owl-dot.active {
+    background-color: #000 !important;
+}*/
