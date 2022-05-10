@@ -289,3 +289,18 @@ p {
 }
 
 /* end header */
+
+
+/* contador */
+#contador{
+    text-align: center;
+}
+
+.counter{
+    text-align: center;
+    font-size: 100px;
+  }
+
+/* end contador */
+
+
