@@ -9,6 +9,11 @@
     font-family: futura-pt, sans-serif;
 }
 
+html {
+    scroll-padding-top: 6rem;
+    /* height of sticky header */
+}
+
 body {
     background-color: aquamarine;
 }
@@ -18,7 +23,10 @@ h1 {
 }
 
 h2 {
-    font-size: 3.4rem;
+    font-size: 3rem;
+    font-weight: 700;
+    font-style: italic;
+    text-align: center;
 }
 
 h3 {
@@ -83,14 +91,35 @@ p {
 }
 
 .box {
-    padding: 1rem 1rem 15rem 1rem;
+    background: #fff;
+    border-radius: 10%;
+    box-shadow: 0px 0px 4rem 0px rgb(0 0 0 / 10%);
+    margin: auto auto 2em auto;
+    padding: 1rem 1rem 2rem 1rem;
+    max-width: 90%;
+    text-align: center;
+    align-items: center;
+
+
+    /*
+    padding: 1rem 1rem 14rem 1rem;
     margin: 0 auto;
     margin-bottom: 2rem;
     box-shadow: 0px 0px 4rem 0px rgb(0 0 0 / 10%);
     border: transparent;
-    border-radius: 5%;
-    max-width: 25rem;
+    background-color: #FFF;
+    border-radius: 10%;
+    max-width: 40%;*/
 }
+
+.boxTitle {
+    color: #000;
+    font-size: 2.2rem;
+    font-weight: 700;
+    font-style: italic;
+    text-align: center;
+}
+
 
 
 
@@ -141,9 +170,10 @@ p {
     align-items: center;
 }
 
-#nav-toggle{
+#nav-toggle {
     padding: 0.8rem 0.4rem 0 0;
 }
+
 .navbar, a {
     color: #FFF;
     text-decoration: none;
@@ -224,4 +254,38 @@ p {
     }
 }
 
+/* reemplazado por scroll-padding-top en html{}
+:target::before {
+    content: "";
+    display: block;
+    height: 5rem; 
+    margin: -5rem 0 0; 
+  }
+  */
+
+
 /* end Nav */
+
+/* header */
+
+#home {
+    height: 84vh;
+}
+
+#home-data {
+    position: relative;
+}
+
+.centrado {
+    position: absolute;
+    margin-top: 21vh;
+}
+
+#lema {
+    font-size: 2.2rem;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 3rem;
+}
+
+/* end header */
