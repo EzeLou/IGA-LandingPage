@@ -99,10 +99,10 @@ p {
 
 .box {
     background: #fff;
-    border-radius: 10%;
-    box-shadow: 0px 0px 4rem 0px rgb(0 0 0 / 10%);
+    border-radius: 5%;
+    box-shadow: 0px 0px 4rem 0px rgb(0 0 0 / 25%);
     margin: auto auto 2em auto;
-    padding: 1rem 1rem 2rem 1rem;
+    padding: 2rem 1rem 2rem 1rem; 
     max-width: 90%;
     text-align: center;
     align-items: center;
@@ -310,7 +310,7 @@ p {
 
 /* end contador */
 
-/* owl carousel */
+/* owl_carousel */
 .section-padding {
     padding: 1rem 0;
 }
@@ -339,3 +339,40 @@ p {
 .owl-dot.active {
     background-color: #000 !important;
 }*/
+
+/* end owl_carousel */
+
+/* contacto */
+
+#contactData{
+    text-align: left;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #000;
+   
+}
+
+.linkBk{
+    color: #000;
+    text-decoration: underline;
+}
+
+.linkBk:hover{
+    color: #FC5000;
+}
+
+.icons{
+    font-size: 2.2rem;
+    text-align: right;
+
+}
+
+form{
+    font-family: futura-pt, sans-serif;
+    color: #000;
+}
+
+form::placeholder{
+    color: #000;
+}
+
