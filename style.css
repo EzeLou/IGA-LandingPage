@@ -377,3 +377,28 @@ form::placeholder{
     color: #000;
 }
 
+/* end contacto */
+
+
+
+
+
+/* footer */ 
+
+#footerTxtLF{
+    font-size: 1.2rem;
+    text-align: left;
+
+}
+
+#footerTxtRG{
+    font-size: 1.2rem;
+    text-align: right;
+}
+
+#footerLink{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+/* end footer */ 
