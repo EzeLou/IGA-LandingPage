@@ -1,0 +1,434 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css");
+/* boostrap 5 */
+@import url("https://use.typekit.net/wqd5xqs.css");
+/* adobe fonts */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css");
+/* animate css usage: animate__animated -animacion- https://animate.style/ */
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css");
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css");
+
+
+
+* {
+    font-family: futura-pt, sans-serif;
+}
+
+html {
+    scroll-padding-top: 6rem;
+    /* height of sticky header */
+}
+
+body {
+    background-color: #fff;
+}
+
+h1 {
+    font-size: 5.4rem;
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    font-style: italic;
+    text-align: center;
+}
+
+h3 {
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+h4 {
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+p {
+    font-size: 1.4rem;
+}
+
+.bkWhite {
+    background-color: #FFF;
+    color: #000;
+}
+
+.bkBlue {
+    background-color: #0B109F;
+    color: #FFF;
+}
+
+.bkOrange {
+    background-color: #d1d1d1;
+    color: #000;
+}
+
+.bkOrangeR {
+    background-color: #FC5000;
+    color: #FFF;
+}
+
+.bkGrey {
+    background-color: #D8D8D8;
+    color: #000;
+}
+
+.bkDarkGrey {
+    background-color: #5D5D5D;
+    color: #FFF;
+}
+
+.gradientBlueOrange {
+    background: #0B109F;
+    background: linear-gradient(180deg, #0B109F 30%, #d1d1d1 100%);
+    padding: 1rem;
+}
+
+.gradientOrangeWhite {
+    background: #d1d1d1;
+    background: linear-gradient(180deg, #d1d1d1 34%, #FFF 98%, #FFF 100%);
+    padding: 1rem;
+}
+
+.gradientWhiteBlue {
+    background: #0B109F;
+    background: linear-gradient(0deg, #0B109F 34%, #FFF 98%, #FFF 100%);
+    padding: 1rem;
+}
+
+.gradientOrangeGrey {
+    background: #d1d1d1;
+    background: linear-gradient(180deg, #d1d1d1 34%, #D8D8D8 98%, #D8D8D8 100%);
+    padding: 1rem;
+}
+
+.container {
+    padding: 1rem;
+}
+
+.box {
+    background: #fff;
+    border-radius: 5%;
+    box-shadow: 0px 0px 4rem 0px rgb(0 0 0 / 25%);
+    margin: auto auto 2em auto;
+    padding: 2rem 1rem 2rem 1rem; 
+    max-width: 90%;
+    text-align: center;
+    align-items: center;
+
+
+    /*
+    padding: 1rem 1rem 14rem 1rem;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    box-shadow: 0px 0px 4rem 0px rgb(0 0 0 / 10%);
+    border: transparent;
+    background-color: #FFF;
+    border-radius: 10%;
+    max-width: 40%;*/
+}
+
+.boxTitle {
+    color: #000;
+    font-size: 2.2rem;
+    font-weight: 700;
+    font-style: italic;
+    text-align: center;
+}
+
+
+
+
+
+/* Nav */
+
+.btn {
+    font-family: futura-pt, sans-serif;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #0B109F;
+    border-color: #0B109F;
+}
+
+.btn-primary:hover {
+    background-color: #1219d6;
+    border-color: #1219d6;
+}
+
+.btn-primary:focus {
+    background-color: #282ca1;
+    border-color: #282ca1;
+}
+
+
+.navbar {
+    /* make it stick */
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+
+    /* in front of all other elements */
+    z-index: 99;
+
+    /* set background */
+    background: #FC5000;
+    background: linear-gradient(180deg, #FC5000 85%, rgba(65, 65, 65, 1) 100%);
+
+    padding: 0;
+
+    /* define flex */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#nav-toggle {
+    padding: 0.8rem 0.4rem 0 0;
+}
+
+.navbar, a {
+    color: #FFF;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.navbar, a:hover {
+    /*  ver    */
+    color: #a3a3a3;
+}
+
+.logo-image {
+    display: block;
+    height: 4rem
+}
+
+.nav-menu {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    list-style-image: none;
+}
+
+.menu-item {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+
+.menu-icon {
+    display: none;
+}
+
+.bar {
+    width: 1.4rem;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px auto;
+}
+
+@media only screen and (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .logo-container {
+        width: 100%;
+    }
+
+    .nav-menu {
+        display: none;
+        width: 100%;
+
+        width: 100%;
+    }
+
+    .active {
+        display: block;
+    }
+
+    .menu-item {
+        display: block;
+        width: 100%;
+        padding: 5px 0;
+        text-align: end;
+    }
+
+    .menu-icon {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 5%;
+    }
+
+    .menu-icon:hover .bar {
+        background-color: #0B109F;
+    }
+}
+
+/* reemplazado por scroll-padding-top en html{}
+:target::before {
+    content: "";
+    display: block;
+    height: 5rem; 
+    margin: -5rem 0 0; 
+  }
+  */
+
+
+/* end Nav */
+
+/* header */
+
+#home {
+    height: 84vh;
+}
+
+#home-data {
+    position: relative;
+}
+
+.centrado {
+    position: absolute;
+    margin-top: 21vh;
+}
+
+#lema {
+    font-size: 2.2rem;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 3rem;
+}
+
+/* end header */
+
+
+/* contador */
+#contador {
+    text-align: center;
+}
+
+.counter {
+    text-align: center;
+    font-size: 100px;
+}
+
+/* end contador */
+
+/* owl_carousel */
+.section-padding {
+    padding: 1rem 0;
+}
+
+.brand-carousel {
+    /*background: aliceblue;*/
+    margin-top: 0%;
+}
+
+/*  
+.owl-dots {
+    text-align: center;
+    margin-top: 4%;
+}
+
+.owl-dot {
+    display: inline-block;
+    height: 15px !important;
+    width: 15px !important;
+    background-color: #878787 !important;
+    opacity: 0.8;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+.owl-dot.active {
+    background-color: #000 !important;
+}*/
+
+/* end owl_carousel */
+
+/* contacto */
+
+#contactData{
+    text-align: left;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #000;
+   
+}
+
+.linkBk{
+    color: #000;
+    text-decoration: underline;
+}
+
+.linkBk:hover{
+    color: #d1d1d1;
+}
+
+.icons{
+    font-size: 2.2rem;
+    text-align: right;
+
+}
+
+form{
+    font-family: futura-pt, sans-serif;
+    color: #000;
+}
+
+
+form::placeholder{
+    color: #000;
+}
+
+/* end contacto */
+
+/* data footer */ 
+
+.centrar{
+    text-align: center;
+}
+
+.infoDataFooter{
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-align: right;
+}
+
+.linkDataFooter{
+    color: #000;
+    text-decoration: underline;
+}
+
+.linkDataFooter:hover{
+    color: #d1d1d1;
+}
+/* end data footer */ 
+
+
+/* footer */ 
+
+#footerTxtLF{
+    font-size: 1.2rem;
+    text-align: left;
+
+}
+
+#footerTxtRG{
+    font-size: 1.2rem;
+    text-align: right;
+}
+
+#footerLink{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+/* end footer */ 
