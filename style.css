@@ -134,6 +134,24 @@ p {
 }
 
 
+/* whatsapp */ 
+.whatsapp {
+    position:fixed;
+    width:4rem;
+    height:4rem;
+    bottom:2rem;
+    right:2rem;
+    background-color:#25d366;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    font-size: 2.2rem;
+    z-index:100;
+  }
+  
+  .whatsapp-icon {
+    margin-top:1rem;
+  }
 
 
 
