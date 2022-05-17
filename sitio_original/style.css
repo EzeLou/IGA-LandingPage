@@ -31,7 +31,7 @@ h1 {
 h2 {
     font-size: 3rem;
     font-weight: 700;
-    font-style: normal;
+    font-style: italic;
     text-align: center;
 }
 
@@ -70,49 +70,14 @@ p {
     color: #000;
 }
 
-.bkGrey2{
-    background-color: #d1d1d1;
-    color: #000;
-}
-
 .bkDarkGrey {
     background-color: #5D5D5D;
     color: #FFF;
 }
 
-.gradientWhiteDarkGrey{
-    background: #FFF;
-    background: linear-gradient(180deg, #FFF 30%, #5D5D5D 100%);
-    padding: 1rem;
-}
-
-.gradientDarkGreyOrange{
-    background: #5D5D5D;
-    background: linear-gradient(180deg, #5D5D5D 30%, #FC5000 100%);
-    padding: 1rem;
-}
-
-.gradientDarkGreyBlue{
-    background: #5D5D5D;
-    background: linear-gradient(180deg, #5D5D5D 30%, #0B109F 100%);
-    padding: 1rem;
-}
-
 .gradientBlueOrange {
     background: #0B109F;
     background: linear-gradient(180deg, #0B109F 30%, #FC5000 100%);
-    padding: 1rem;
-}
-
-.gradientBlueWhite {
-    background: #0B109F;
-    background: linear-gradient(180deg, #0B109F 34%, #FFF 98%, #FFF 100%);
-    padding: 1rem;
-}
-
-.gradientWhiteWhite {
-    background: #FFF;
-    background: linear-gradient(180deg, #FFF 34%, #e5e5e5 98%, #e5e5e5 100%);
     padding: 1rem;
 }
 
@@ -129,7 +94,7 @@ p {
 }
 
 .gradientOrangeGrey {
-    background: #d1d1d1;
+    background: #FC5000;
     background: linear-gradient(180deg, #FC5000 34%, #D8D8D8 98%, #D8D8D8 100%);
     padding: 1rem;
 }
@@ -189,6 +154,7 @@ p {
   }
 
 
+
 /* Nav */
 
 .btn {
@@ -199,18 +165,18 @@ p {
 
 .btn-primary {
     color: #fff;
-    background-color: #FC5000;
-    border-color: #FC5000;
+    background-color: #0B109F;
+    border-color: #0B109F;
 }
 
 .btn-primary:hover {
-    background-color: #cf4200;
-    border-color: #cf4200;
+    background-color: #1219d6;
+    border-color: #1219d6;
 }
 
 .btn-primary:focus {
-    background-color: #b93b00;
-    border-color: #b93b00;
+    background-color: #282ca1;
+    border-color: #282ca1;
 }
 
 
@@ -224,8 +190,8 @@ p {
     z-index: 99;
 
     /* set background */
-    /*background: #FC5000;*/
-    background: linear-gradient(180deg, #f7f7f7 85%, rgb(147, 147, 147) 100%);
+    background: #FC5000;
+    background: linear-gradient(180deg, #FC5000 85%, rgba(65, 65, 65, 1) 100%);
 
     padding: 0;
 
@@ -240,7 +206,7 @@ p {
 }
 
 .navbar, a {
-    color: #000;
+    color: #FFF;
     text-decoration: none;
     font-size: 1.3rem;
     font-weight: 500;
@@ -276,7 +242,7 @@ p {
 .bar {
     width: 1.4rem;
     height: 3px;
-    background-color: #000;
+    background-color: #fff;
     margin: 4px auto;
 }
 
@@ -334,7 +300,7 @@ p {
 /* header */
 
 #home {
-    height: 50vh; /*84*/
+    height: 84vh;
 }
 
 #home-data {
@@ -343,12 +309,12 @@ p {
 
 .centrado {
     position: absolute;
-    margin-top: 7vh;   /*21*/
+    margin-top: 21vh;
 }
 
 #lema {
-    font-size: 2.3rem;
-    font-weight: 500;
+    font-size: 2.2rem;
+    font-weight: 700;
     text-align: center;
     padding-top: 3rem;
 }
@@ -416,7 +382,7 @@ p {
 }
 
 .linkBk:hover{
-    color: #d1d1d1;
+    color: #FC5000;
 }
 
 .icons{
@@ -455,7 +421,7 @@ form::placeholder{
 }
 
 .linkDataFooter:hover{
-    color: #d1d1d1;
+    color: #FC5000;
 }
 /* end data footer */ 
 
@@ -476,15 +442,6 @@ form::placeholder{
 #footerLink{
     font-size: 1.2rem;
     font-weight: 500;
-    
-        color: #FFF;
-    
-}
-
-#footerLink:hover{
-    color: #f39b9e;  
-    text-decoration: underline;
-   
 }
 
 /* end footer */ 
