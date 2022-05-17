@@ -31,7 +31,7 @@ h1 {
 h2 {
     font-size: 3rem;
     font-weight: 700;
-    font-style: italic;
+    font-style: normal;
     text-align: center;
 }
 
@@ -61,11 +61,6 @@ p {
 }
 
 .bkOrange {
-    background-color: #d1d1d1;
-    color: #000;
-}
-
-.bkOrangeR {
     background-color: #FC5000;
     color: #FFF;
 }
@@ -75,20 +70,55 @@ p {
     color: #000;
 }
 
+.bkGrey2{
+    background-color: #d1d1d1;
+    color: #000;
+}
+
 .bkDarkGrey {
     background-color: #5D5D5D;
     color: #FFF;
 }
 
+.gradientWhiteDarkGrey{
+    background: #FFF;
+    background: linear-gradient(180deg, #FFF 30%, #5D5D5D 100%);
+    padding: 1rem;
+}
+
+.gradientDarkGreyOrange{
+    background: #5D5D5D;
+    background: linear-gradient(180deg, #5D5D5D 30%, #FC5000 100%);
+    padding: 1rem;
+}
+
+.gradientDarkGreyBlue{
+    background: #5D5D5D;
+    background: linear-gradient(180deg, #5D5D5D 30%, #0B109F 100%);
+    padding: 1rem;
+}
+
 .gradientBlueOrange {
     background: #0B109F;
-    background: linear-gradient(180deg, #0B109F 30%, #d1d1d1 100%);
+    background: linear-gradient(180deg, #0B109F 30%, #FC5000 100%);
+    padding: 1rem;
+}
+
+.gradientBlueWhite {
+    background: #0B109F;
+    background: linear-gradient(180deg, #0B109F 34%, #FFF 98%, #FFF 100%);
+    padding: 1rem;
+}
+
+.gradientWhiteWhite {
+    background: #FFF;
+    background: linear-gradient(180deg, #FFF 34%, #e5e5e5 98%, #e5e5e5 100%);
     padding: 1rem;
 }
 
 .gradientOrangeWhite {
-    background: #d1d1d1;
-    background: linear-gradient(180deg, #d1d1d1 34%, #FFF 98%, #FFF 100%);
+    background: #FC5000;
+    background: linear-gradient(180deg, #FC5000 34%, #FFF 98%, #FFF 100%);
     padding: 1rem;
 }
 
@@ -100,7 +130,7 @@ p {
 
 .gradientOrangeGrey {
     background: #d1d1d1;
-    background: linear-gradient(180deg, #d1d1d1 34%, #D8D8D8 98%, #D8D8D8 100%);
+    background: linear-gradient(180deg, #FC5000 34%, #D8D8D8 98%, #D8D8D8 100%);
     padding: 1rem;
 }
 
@@ -152,18 +182,18 @@ p {
 
 .btn-primary {
     color: #fff;
-    background-color: #0B109F;
-    border-color: #0B109F;
+    background-color: #FC5000;
+    border-color: #FC5000;
 }
 
 .btn-primary:hover {
-    background-color: #1219d6;
-    border-color: #1219d6;
+    background-color: #cf4200;
+    border-color: #cf4200;
 }
 
 .btn-primary:focus {
-    background-color: #282ca1;
-    border-color: #282ca1;
+    background-color: #b93b00;
+    border-color: #b93b00;
 }
 
 
@@ -177,8 +207,8 @@ p {
     z-index: 99;
 
     /* set background */
-    background: #FC5000;
-    background: linear-gradient(180deg, #FC5000 85%, rgba(65, 65, 65, 1) 100%);
+    /*background: #FC5000;*/
+    background: linear-gradient(180deg, #f7f7f7 85%, rgb(147, 147, 147) 100%);
 
     padding: 0;
 
@@ -193,7 +223,7 @@ p {
 }
 
 .navbar, a {
-    color: #FFF;
+    color: #000;
     text-decoration: none;
     font-size: 1.3rem;
     font-weight: 500;
@@ -229,7 +259,7 @@ p {
 .bar {
     width: 1.4rem;
     height: 3px;
-    background-color: #fff;
+    background-color: #000;
     margin: 4px auto;
 }
 
@@ -287,7 +317,7 @@ p {
 /* header */
 
 #home {
-    height: 84vh;
+    height: 50vh; /*84*/
 }
 
 #home-data {
@@ -296,12 +326,12 @@ p {
 
 .centrado {
     position: absolute;
-    margin-top: 21vh;
+    margin-top: 7vh;   /*21*/
 }
 
 #lema {
-    font-size: 2.2rem;
-    font-weight: 700;
+    font-size: 2.3rem;
+    font-weight: 500;
     text-align: center;
     padding-top: 3rem;
 }
@@ -429,6 +459,15 @@ form::placeholder{
 #footerLink{
     font-size: 1.2rem;
     font-weight: 500;
+    
+        color: #FFF;
+    
+}
+
+#footerLink:hover{
+    color: #f39b9e;  
+    text-decoration: underline;
+   
 }
 
 /* end footer */ 
