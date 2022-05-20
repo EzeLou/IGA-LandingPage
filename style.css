@@ -269,7 +269,7 @@ p {
 }
 
 
-.menu-icon {
+.menu_icon {
     display: none;
 }
 
@@ -307,14 +307,14 @@ p {
         text-align: end;
     }
 
-    .menu-icon {
+    .menu_icon {
         display: block;
         position: absolute;
         top: 20px;
         right: 5%;
     }
 
-    .menu-icon:hover .bar {
+    .menu_icon:hover .bar {
         background-color: #0B109F;
     }
 }

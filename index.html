@@ -54,16 +54,32 @@
                 </li>
             </ul>
 
-            <div id="nav-toggle" class="menu-icon">
+            <div id="nav-toggle" class="menu_icon">
                 <div class="bar"></div>
                 <div class="bar"></div>
                 <div class="bar"></div>
             </div>
 
+            <script>
+                const hamburger = document.querySelector(".hamburger");
+                const navMenu = document.querySelector(".nav-menu");
+                hamburger.addEventListener("click", mobileMenu);
+                function mobileMenu() {
+                    hamburger.classList.toggle("active");
+                    navMenu.classList.toggle("active");
+                }
+
+                const navLink = document.querySelectorAll(".nav-link");
+                navLink.forEach(n => n.addEventListener("click", closeMenu));
+                function closeMenu() {
+                    hamburger.classList.remove("active");
+                    navMenu.classList.remove("active");
+                }
+            </script>
         </div>
     </nav>
 
-   
+
     <script>
         var tglbtn = document.getElementById("nav-toggle");
         var navlst = document.getElementById("nav-list")
