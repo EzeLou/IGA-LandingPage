@@ -25,23 +25,23 @@
         <div class="container">
 
             <div class="logo-container">
-                <a href="#home">
+                <a href="#home" class="nav-logo">
                     <img class="logo-image" src="img/logo.png" alt="logo">
                 </a>
             </div>
 
             <ul id="nav-list" class="nav-menu">
                 <li class="menu-item">
-                    <a href="#news" rel="noopener noreferrer">NOVEDADES</a>
+                    <a onclick="toggleNavbar()" href="#news" rel="noopener noreferrer">NOVEDADES</a>
                 </li>
                 <li class="menu-item">
-                    <a href="#empresa" rel="noopener noreferrer">EMPRESA</a>
+                    <a onclick="toggleNavbar()" href="#empresa" rel="noopener noreferrer">EMPRESA</a>
                 </li>
                 <li class="menu-item">
-                    <a href="#marcas" rel="noopener noreferrer">MARCAS</a>
+                    <a onclick="toggleNavbar()" href="#marcas" rel="noopener noreferrer">MARCAS</a>
                 </li>
                 <li class="menu-item">
-                    <a href="#contacto" rel="noopener noreferrer">CONTACTO</a>
+                    <a onclick="toggleNavbar()"  href="#contacto" rel="noopener noreferrer">CONTACTO</a>
                 </li>
 
                 <li class="menu-item">
@@ -59,24 +59,15 @@
                 <div class="bar"></div>
                 <div class="bar"></div>
             </div>
-
-            <script>
-                const hamburger = document.querySelector(".hamburger");
-                const navMenu = document.querySelector(".nav-menu");
-                hamburger.addEventListener("click", mobileMenu);
-                function mobileMenu() {
-                    hamburger.classList.toggle("active");
-                    navMenu.classList.toggle("active");
-                }
-
-                const navLink = document.querySelectorAll(".nav-link");
-                navLink.forEach(n => n.addEventListener("click", closeMenu));
-                function closeMenu() {
-                    hamburger.classList.remove("active");
-                    navMenu.classList.remove("active");
-                }
-            </script>
+   
         </div>
+
+        <script>
+            function toggleNavbar(){
+                document.getElementById("nav-list").className="nav-menu";
+            }
+        </script>
+
     </nav>
 
 
@@ -92,7 +83,7 @@
 
     <header id="home" class="bkBlue">
         <div class="container">
-            <div class="centrado">
+            <div class="marginTop">
                 <img src="img/logo_letras.png" class="img-fluid" alt="logo IG Autopartes">
 
                 <h3 id="lema">DISTRIBUIDOR MAYORISTA DE REPUESTOS DEL AUTOMOTOR</h2>

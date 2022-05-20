@@ -70,7 +70,7 @@ p {
     color: #000;
 }
 
-.bkGrey2{
+.bkGrey2 {
     background-color: #d1d1d1;
     color: #000;
 }
@@ -80,19 +80,19 @@ p {
     color: #FFF;
 }
 
-.gradientWhiteDarkGrey{
+.gradientWhiteDarkGrey {
     background: #FFF;
     background: linear-gradient(180deg, #FFF 30%, #5D5D5D 100%);
     padding: 1rem;
 }
 
-.gradientDarkGreyOrange{
+.gradientDarkGreyOrange {
     background: #5D5D5D;
     background: linear-gradient(180deg, #5D5D5D 30%, #FC5000 100%);
     padding: 1rem;
 }
 
-.gradientDarkGreyBlue{
+.gradientDarkGreyBlue {
     background: #5D5D5D;
     background: linear-gradient(180deg, #5D5D5D 30%, #0B109F 100%);
     padding: 1rem;
@@ -143,7 +143,7 @@ p {
     border-radius: 5%;
     box-shadow: 0px 0px 4rem 0px rgb(0 0 0 / 25%);
     margin: auto auto 2em auto;
-    padding: 2rem 1rem 2rem 1rem; 
+    padding: 2rem 1rem 2rem 1rem;
     max-width: 90%;
     text-align: center;
     align-items: center;
@@ -169,28 +169,29 @@ p {
 }
 
 
-/* whatsapp */ 
+/* whatsapp */
 .whatsapp {
-    position:fixed;
-    width:4rem;
-    height:4rem;
-    bottom:2rem;
-    right:2rem;
-    background-color:#25d366;
-    color:#FFF;
-    border-radius:50px;
-    text-align:center;
+    position: fixed;
+    width: 4rem;
+    height: 4rem;
+    bottom: 2rem;
+    right: 2rem;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
     font-size: 2.2rem;
-    z-index:100;
-  }
-  
-  .whatsapp-icon {
-    margin-top:1rem;
-  }
+    z-index: 100;
+}
+
+.whatsapp-icon {
+    margin-top: 1rem;
+}
+
+/* whatsapp */
 
 
-/* Nav */
-
+/* btn */
 .btn {
     font-family: futura-pt, sans-serif;
     font-size: 1.3rem;
@@ -213,6 +214,10 @@ p {
     border-color: #b93b00;
 }
 
+/* btn */
+
+
+/* Nav */
 
 .navbar {
     /* make it stick */
@@ -280,7 +285,7 @@ p {
     margin: 4px auto;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 770px) {
     .navbar {
         flex-direction: column;
     }
@@ -319,14 +324,15 @@ p {
     }
 }
 
- /* reemplazado por scroll-padding-top en html{} */
+
+/* reemplazado por scroll-padding-top en html{} 
 :target::before {
     content: "";
     display: block;
-    height: 5rem; 
-    margin: -5rem 0 0; 
-  }
-  
+    height: 5rem;
+    margin: -5rem 0 0;
+}
+*/
 
 
 /* end Nav */
@@ -334,16 +340,17 @@ p {
 /* header */
 
 #home {
-    height: 50vh; /*84*/
+    height: 50vh;
+    /*84*/
 }
 
 #home-data {
     position: relative;
 }
 
-.centrado {
-    position: absolute;
-    margin-top: 7vh;   /*21*/
+.marginTop {
+    margin-top: 7vh;
+    /*21*/
 }
 
 #lema {
@@ -402,89 +409,90 @@ p {
 
 /* contacto */
 
-#contactData{
+#contactData {
     text-align: left;
     font-weight: 500;
     line-height: 1.8rem;
     color: #000;
-   
+
 }
 
-.linkBk{
+.linkBk {
     color: #000;
     text-decoration: underline;
 }
 
-.linkBk:hover{
+.linkBk:hover {
     color: #d1d1d1;
 }
 
-.icons{
+.icons {
     font-size: 2.2rem;
     text-align: right;
 
 }
 
-form{
+form {
     font-family: futura-pt, sans-serif;
     color: #000;
 }
 
 
-form::placeholder{
+form::placeholder {
     color: #000;
 }
 
 /* end contacto */
 
-/* data footer */ 
+/* data footer */
 
-.centrar{
+.centrar {
     text-align: center;
 }
 
-.infoDataFooter{
+.infoDataFooter {
     font-size: 1.2rem;
     font-weight: 500;
     text-align: right;
 }
 
-.linkDataFooter{
+.linkDataFooter {
     color: #000;
     text-decoration: underline;
 }
 
-.linkDataFooter:hover{
+.linkDataFooter:hover {
     color: #d1d1d1;
 }
-/* end data footer */ 
+
+/* end data footer */
 
 
-/* footer */ 
+/* footer */
 
-#footerTxtLF{
+#footerTxtLF {
     font-size: 1.2rem;
     text-align: left;
 
 }
 
-#footerTxtRG{
+#footerTxtRG {
     font-size: 1.2rem;
     text-align: right;
 }
 
-#footerLink{
+#footerLink {
     font-size: 1.2rem;
     font-weight: 500;
-    
-        color: #FFF;
-    
+
+    color: #FFF;
+
 }
 
-#footerLink:hover{
-    color: #f39b9e;  
+#footerLink:hover {
+    color: #f39b9e;
     text-decoration: underline;
-   
+
 }
 
-/* end footer */ 
+/* end footer */
