@@ -22,6 +22,7 @@
 
     <!-- NavBar -->
     <nav class="navbar">
+
         <div class="container">
 
             <div class="logo-container">
@@ -41,7 +42,7 @@
                     <a onclick="toggleNavbar()" href="#marcas" rel="noopener noreferrer">MARCAS</a>
                 </li>
                 <li class="menu-item">
-                    <a onclick="toggleNavbar()"  href="#contacto" rel="noopener noreferrer">CONTACTO</a>
+                    <a onclick="toggleNavbar()" href="#contacto" rel="noopener noreferrer">CONTACTO</a>
                 </li>
 
                 <li class="menu-item">
@@ -59,19 +60,19 @@
                 <div class="bar"></div>
                 <div class="bar"></div>
             </div>
-   
         </div>
-
-        <script>
-            function toggleNavbar(){
-                document.getElementById("nav-list").className="nav-menu";
-            }
-        </script>
-
     </nav>
+
+    <div class="gradientNav">
+        <br>
+    </div>
 
 
     <script>
+        function toggleNavbar() {
+            document.getElementById("nav-list").className = "nav-menu";
+        }
+
         var tglbtn = document.getElementById("nav-toggle");
         var navlst = document.getElementById("nav-list")
         tglbtn.addEventListener('click', () => { navlst.classList.toggle("active"); });

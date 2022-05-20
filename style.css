@@ -140,7 +140,7 @@ p {
 
 .box {
     background: #fff;
-    border-radius: 5%;
+    border-radius: 3%;
     box-shadow: 0px 0px 4rem 0px rgb(0 0 0 / 25%);
     margin: auto auto 2em auto;
     padding: 2rem 1rem 2rem 1rem;
@@ -219,6 +219,29 @@ p {
 
 /* Nav */
 
+.gradientNav{
+    width: 100%;
+    background: transparent;
+    background: linear-gradient(0deg, transparent 70%, #0000003d 100%); /* 0000003d */
+    padding: 0.3rem;
+    z-index: 100;
+
+    position: fixed;
+    
+    top: 40;
+
+      /* define flex */
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+}
+
+#navigation{
+    background: #fff;
+   
+}
+
 .navbar {
     /* make it stick */
     position: sticky;
@@ -229,8 +252,8 @@ p {
     z-index: 99;
 
     /* set background */
-    /*background: #FC5000;*/
-    background: linear-gradient(180deg, #f7f7f7 85%, rgb(147, 147, 147) 100%);
+    background: #fff;
+    /*background: linear-gradient(180deg, #f7f7f7 85%, rgb(147, 147, 147) 100%);*/
 
     padding: 0;
 
@@ -457,8 +480,9 @@ form::placeholder {
 }
 
 .linkDataFooter {
-    color: #000;
-    text-decoration: underline;
+    font-size: 1.1rem;
+    color: #00000073;
+    /*text-decoration: underline;*/
 }
 
 .linkDataFooter:hover {
