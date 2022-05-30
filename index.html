@@ -419,19 +419,21 @@
                         <div class="container">
                             <h3>Formulario de Contacto</h3>
 
-                            <form action="">
-                                <input type="name" class="form-control" id="formNombre" placeholder="Nombre">
+                            <form method="post" name="consult" action="contact.php">
+                                <input type="text" class="form-control" id="formNombre" name="name" placeholder="Nombre*" required>
 
-                                <input type="email" class="form-control" id="formEmail" placeholder="Email">
+                                <input type="email" class="form-control" id="formEmail" name="email" placeholder="Email">
 
-                                <input type="phone" class="form-control" id="formTelefono" placeholder="Telefono">
+                                <input type="tel" class="form-control" id="formTelefono" name="phone" placeholder="Telefono*" required>
 
-                                <textarea class="form-control" id="formConsulta" placeholder="Ingresa tu consulta aqui"
+                                <textarea class="form-control" id="formConsulta" name="consulta" placeholder="Ingresa tu consulta aqui"
                                     rows="2"></textarea>
 
                                 <br>
-                                <a class="btn btn-primary" href="" role="button">ENVIAR</a>
 
+                                <button class="btn btn-primary" role="button" type="submit">ENVIAR</button>
+                                
+                                    
                             </form>
 
                         </div>
