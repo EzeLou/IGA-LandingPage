@@ -9,7 +9,7 @@ $consulta = $_POST['consulta'];
 //send email
 $email_to = 'deftflamink@gmail.com'.','.'igautopartesok@gmail.com'.','.'administracion@ig-sa.com.ar';
 $email_subject = "Nueva Consulta WEB";
-$email_body = '<table><tr><th>Nombre: </th><th>'.$name.'</th></tr><tr><th>Telefono: </th><th>'.$phone.'</th></tr></table>';
+$email_body = '<table><tr><th>Nombre: </th><th>'.$name.'</th></tr><tr><th>Telefono: </th><th>'.$phone.'</th></tr><tr><th>Email: </th><th>'.$email.'</th></tr><tr><th>Consulta: </th><th>'.$consulta.'</th></tr></table>';
 $headers  = 'MIME-Version: 1.0' . "\r\n";
 $headers .= 'Content-type: text/html; charset=UTF-8' . "\r\n";
 $headers .= 'From: Contacto-Pagina@deftflamink.com' . "\r\n" . 'Reply-To: info@deftflamink.com.ar' . "\r\n";
