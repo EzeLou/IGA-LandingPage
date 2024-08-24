@@ -29,7 +29,7 @@ h1 {
 }
 
 h2 {
-    font-size: 3rem;
+    font-size: 2.8rem;
     font-weight: 700;
     font-style: normal;
     text-align: center;
@@ -520,3 +520,14 @@ form::placeholder {
 }
 
 /* end footer */
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    height: 1.65rem;
+    width: 1.65rem;
+    filter: invert(100%);
+/*    
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 100%;
+    border: 0.15rem solid black;
+*/
+}
