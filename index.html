@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IG Autopartes</title>
-    
+
     <meta name="title" content="IG Autopartes">
     <meta name="description" content="Distribuidor mayorista de repuestos del automotor.">
     <meta name="keywords" content="Iglesias, Mayorista, Distribuidora, Autopartes, Auto, Autos, Camioneta, Repuesto, Repuestos, Repracion, Reparaciones, RepuestosOriginales, RepuestosAutomotrices, Repuestosdeautos, Automotor, Automoteres, Automotriz, Motor, Mecanica, Mecanico, Mecanicaautomotiva, Mecanicaautomotriz, Distribuidora, DistribuidorMayorista, Trendelantero, Faro, Goma, Bujias, Ford, Fiat, Chevrolet, Citroen, Peugeot">
@@ -14,7 +14,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="language" content="Spanish">
     <meta name="author" content="Deft Flamink">
-    
+
     <link rel="stylesheet" href="style.css">
 
     <!-- https://favicon.io/ -->
@@ -89,7 +89,9 @@
 
         var tglbtn = document.getElementById("nav-toggle");
         var navlst = document.getElementById("nav-list")
-        tglbtn.addEventListener('click', () => { navlst.classList.toggle("active"); });
+        tglbtn.addEventListener('click', () => {
+            navlst.classList.toggle("active");
+        });
     </script>
 
     <!-- /NavBar -->
@@ -209,17 +211,10 @@
                 </div>
 
                 <div class="col-12 col-sm-8">
-                    <p>IG y ASOCIADOS fue fundada en el año 1990 en la ciudad de Córdoba con el objetivo de distribuir
-                        repuestos del automotor a casas de repuestos y lubricentros de todo el país. Desde su inicio ha
-                        sostenido la premisa que nutre el accionar de la empresa conforme a los valores que guia su
-                        conducta: servicio, eficiencia y eficacia a un precio justo.
-                        Con un crecimiento sostenido en el tiempo,la compañía se consolidó como un distribuidor
-                        confiable en el sector automotor no sólo en la provincia de Córdoba (casa central), sino también
-                        en provincias del norte argentino como Tucumán, Santiago del Estero, San Luis, Catamarca, Salta
-                        y Jujuy. A los largo de estos años ha ido sumando marcas líderes como Fallone, Orlan Rober y
-                        Heliodino entre otras. Así, hoy esta firma familiar posee más de 45 marcas de primera línea en
-                        su cartera.
-                        Actualmente cuenta con la incorporación de la segunda generación familiar a la empresa aportando
+                    <p>IG y ASOCIADOS fue fundada en el año 1990 en la ciudad de Córdoba con el objetivo de distribuir repuestos del automotor a casas de repuestos y lubricentros de todo el país. Desde su inicio ha sostenido la premisa que nutre el accionar
+                        de la empresa conforme a los valores que guia su conducta: servicio, eficiencia y eficacia a un precio justo. Con un crecimiento sostenido en el tiempo,la compañía se consolidó como un distribuidor confiable en el sector automotor
+                        no sólo en la provincia de Córdoba (casa central), sino también en provincias del norte argentino como Tucumán, Santiago del Estero, San Luis, Catamarca, Salta y Jujuy. A los largo de estos años ha ido sumando marcas líderes como
+                        Fallone, Orlan Rober y Heliodino entre otras. Así, hoy esta firma familiar posee más de 45 marcas de primera línea en su cartera. Actualmente cuenta con la incorporación de la segunda generación familiar a la empresa aportando
                         actualización y dinámica sin perder los valores y esencia que tanto pregonan sus fundadores.</p>
                 </div>
                 <br>
@@ -234,23 +229,19 @@
             <div class="row">
 
                 <div class="col-lg-3 col-6">
-                    <h3> <span data-purecounter-start="0" data-purecounter-end="15351" data-purecounter-duration="1"
-                            class="purecounter">"+"</span></h3>
+                    <h3> <span data-purecounter-start="0" data-purecounter-end="15351" data-purecounter-duration="1" class="purecounter">"+"</span></h3>
                     <h4>PRODUCTOS</h4>
                 </div>
                 <div class="col-lg-3 col-6">
-                    <h3> <span data-purecounter-start="0" data-purecounter-end="117" data-purecounter-duration="1"
-                            class="purecounter"></span></h3>
+                    <h3> <span data-purecounter-start="0" data-purecounter-end="117" data-purecounter-duration="1" class="purecounter"></span></h3>
                     <h4>MARCAS</h4>
                 </div>
                 <div class="col-lg-3 col-6">
-                    <h3><span data-purecounter-start="0" data-purecounter-end="9" data-purecounter-duration="1"
-                            class="purecounter"></span></h3>
+                    <h3><span data-purecounter-start="0" data-purecounter-end="9" data-purecounter-duration="1" class="purecounter"></span></h3>
                     <h4>PROVINCIAS</h4>
                 </div>
                 <div class="col-lg-3 col-6">
-                    <h3><span data-purecounter-start="0" data-purecounter-end="745" data-purecounter-duration="1"
-                            class="purecounter"></span></h3>
+                    <h3><span data-purecounter-start="0" data-purecounter-end="745" data-purecounter-duration="1" class="purecounter"></span></h3>
                     <h4>CLIENTES</h4>
                 </div>
 
@@ -291,7 +282,134 @@
 
     <section id="marcas" class="bkDarkGrey">
         <div class="container">
-            <h2>MARCAS y PROVEEDORES</h2> <br>
+            <h2>MARCAS y PROVEEDORES
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#marcasModal">
+                Ver todas
+                </button>
+            </h2> <br>
+
+            <!-- Modal -->
+            <div class="modal fade" id="marcasModal" tabindex="-1" aria-labelledby="marcasModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title, bkWhite" id="marcasModalLabel">MARCAS y PROVEEDORES</h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <!--   <h2 class="bkWhite">texto</h2>-->
+
+                            <div class="row">
+                                <div class="col-lg-4 col-sm-4 col-4">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">ALFA</li>
+                                        <li class="list-group-item">ARTE</li>
+                                        <li class="list-group-item">BRK</li>
+                                        <li class="list-group-item">BTP</li>
+                                        <li class="list-group-item">BTS</li>
+                                        <li class="list-group-item">CHEFREN</li>
+                                        <li class="list-group-item">CILBRAKE</li>
+                                        <li class="list-group-item">CJ</li>
+                                        <li class="list-group-item">CRAVERO</li>
+                                        <li class="list-group-item">DASSEN</li>
+                                        <li class="list-group-item">DERFOE</li>
+                                        <li class="list-group-item">DINAMARCA</li>
+                                        <li class="list-group-item">DIVAIO</li>
+                                        <li class="list-group-item">DOBLE G</li>
+                                        <li class="list-group-item">DOG</li>
+                                        <li class="list-group-item">DS</li>
+                                        <li class="list-group-item">DZE</li>
+                                        <li class="list-group-item">EKTION</li>
+                                        <li class="list-group-item">ELIFEL</li>
+                                        <li class="list-group-item">ELOC</li>
+                                        <li class="list-group-item">EUGA</li>
+                                        <li class="list-group-item">EXCELITE</li>
+                                        <li class="list-group-item">FALLONE</li>
+                                        <li class="list-group-item">FERRAZZI</li>
+                                        <li class="list-group-item">FMG</li>
+                                    </ul>
+                                </div>
+
+                                <div class="col-lg-4 col-sm-4 col-4">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">FREMEC</li>
+                                        <li class="list-group-item">GACRI</li>
+                                        <li class="list-group-item">GAREF</li>
+                                        <li class="list-group-item">GENERAL MOTORS</li>
+                                        <li class="list-group-item">GENY</li>
+                                        <li class="list-group-item">GESPANNT</li>
+                                        <li class="list-group-item">HOLLE</li>
+                                        <li class="list-group-item">IR</li>
+                                        <li class="list-group-item">K78</li>
+                                        <li class="list-group-item">KESSEL</li>
+                                        <li class="list-group-item">KOBO</li>
+                                        <li class="list-group-item">LAM</li>
+                                        <li class="list-group-item">LEO</li>
+                                        <li class="list-group-item">LIFTGATE</li>
+                                        <li class="list-group-item">LOCMA</li>
+                                        <li class="list-group-item">MARENO</li>
+                                        <li class="list-group-item">MARIN</li>
+                                        <li class="list-group-item">MARINSA</li>
+                                        <li class="list-group-item">MAZFREN</li>
+                                        <li class="list-group-item">MECANIC 50</li>
+                                        <li class="list-group-item">METANOR</li>
+                                        <li class="list-group-item">MF</li>
+                                        <li class="list-group-item">ML</li>
+                                        <li class="list-group-item">MOHER</li>
+                                        <li class="list-group-item">MONZA</li>
+                                    </ul>
+                                </div>
+
+
+                                <div class="col-lg-4 col-sm-4 col-4">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">NEOTEK</li>
+                                        <li class="list-group-item">OMER</li>
+                                        <li class="list-group-item">ORLAN-ROBER</li>
+                                        <li class="list-group-item">PINTARELLI</li>
+                                        <li class="list-group-item">REIMOTOR</li>
+                                        <li class="list-group-item">REY-GOMA</li>
+                                        <li class="list-group-item">RGU-PRO</li>
+                                        <li class="list-group-item">RM</li>
+                                        <li class="list-group-item">ROLL</li>
+                                        <li class="list-group-item">RON-BAY</li>
+                                        <li class="list-group-item">ROYAL TEK</li>
+                                        <li class="list-group-item">RS</li>
+                                        <li class="list-group-item">SILENT</li>
+                                        <li class="list-group-item">SILISUR</li>
+                                        <li class="list-group-item">SISTEMA 33</li>
+                                        <li class="list-group-item">SR33</li>
+                                        <li class="list-group-item">TACSA</li>
+                                        <li class="list-group-item">TAILLOT</li>
+                                        <li class="list-group-item">TECA</li>
+                                        <li class="list-group-item">TEODORO BARTH</li>
+                                        <li class="list-group-item">THE</li>
+                                        <li class="list-group-item">TOP SAFE</li>
+                                        <li class="list-group-item">TRAXION</li>
+                                        <li class="list-group-item">TRC</li>
+                                        <li class="list-group-item">VUARAM</li>
+                                    </ul>
+                                </div>
+
+                            </div>
+
+
+
+
+
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            <!--<button type="button" class="btn btn-primary">Save changes</button>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
 
             <div class="brand-carousel section-padding owl-carousel">
                 <div class="single-logo">
@@ -451,17 +569,13 @@
                             <h3>Formulario de Contacto</h3>
 
                             <form method="post" name="consult" action="contact.php">
-                                <input type="text" class="form-control" id="formNombre" name="name"
-                                    placeholder="Nombre*" required>
+                                <input type="text" class="form-control" id="formNombre" name="name" placeholder="Nombre*" required>
 
-                                <input type="email" class="form-control" id="formEmail" name="email"
-                                    placeholder="Email">
+                                <input type="email" class="form-control" id="formEmail" name="email" placeholder="Email">
 
-                                <input type="tel" class="form-control" id="formTelefono" name="phone"
-                                    placeholder="Telefono*" required>
+                                <input type="tel" class="form-control" id="formTelefono" name="phone" placeholder="Telefono*" required>
 
-                                <textarea class="form-control" id="formConsulta" name="consulta"
-                                    placeholder="Ingresa tu consulta aqui" rows="2"></textarea>
+                                <textarea class="form-control" id="formConsulta" name="consulta" placeholder="Ingresa tu consulta aqui" rows="2"></textarea>
 
                                 <br>
 
@@ -480,9 +594,7 @@
                 <div class="box bkWhite">
                     <!-- https://www.maps.ie/create-google-map/ -->
                     <div class="container">
-                        <div style="width: 100%"><iframe width="100%" height="600" frameborder="0" scrolling="no"
-                                marginheight="0" marginwidth="0"
-                                src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=+(IG%20Autopartes,%20Rivera%20Indarte%202180)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+                        <div style="width: 100%"><iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=+(IG%20Autopartes,%20Rivera%20Indarte%202180)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
                         </div>
 
                     </div>
@@ -509,7 +621,7 @@
                         <h4>Subscribite al Newsletter</h4>
                         <form method="post" name="consult" action="newsletter.php">
                             <input type="email" class="form-control" id="formEmail" name="email" placeholder="ejemplo@mail.com" required>
-                        <br>
+                            <br>
                             <button class="btn btn-primary" role="button" type="submit">Subscribirse</button>
                         </form>
                     </div>
@@ -530,10 +642,7 @@
                         <div class="row">
                             <div class="col-8">
                                 <p class="infoDataFooter">
-                                    Rivera Indarte 2180, Alta Cordoba <br>
-                                    Cordoba - Argentina <br>
-                                    0351 473 7368 <br>
-                                    administracion@ig-sa.com
+                                    Rivera Indarte 2180, Alta Cordoba <br> Cordoba - Argentina <br> 0351 473 7368 <br> administracion@ig-sa.com
                                 </p>
                             </div>
                             <div class="col-4">
@@ -556,8 +665,7 @@
                 </div>
 
                 <div class="col-6">
-                    <p id="footerTxtRG">Desarrollado por <a id="footerLink" href="https://deftflamink.com"
-                            target="_blank">The Deft Flamink Company</a></p>
+                    <p id="footerTxtRG">Desarrollado por <a id="footerLink" href="https://deftflamink.com" target="_blank">The Deft Flamink Company</a></p>
                 </div>
             </div>
         </div>
