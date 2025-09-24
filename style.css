@@ -430,6 +430,30 @@ p {
 
 /* end owl_carousel */
 
+/* modal brand list */
+.brand-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 80px; /* caja uniforme para el logo */
+}
+
+.brand-item .brand-img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* usa el 100% del espacio disponible del li */
+}
+
+.brand-item .brand-name {
+    display: block;
+    font-weight: 600;
+}
+/* end modal brand list */
+
 /* contacto */
 
 #contactData {
