@@ -345,6 +345,15 @@ p {
     .menu_icon:hover .bar {
         background-color: #0B109F;
     }
+
+    /* reCAPTCHA responsive */
+    .g-recaptcha {
+        transform: scale(0.85);
+        transform-origin: center;
+        margin: 15px auto;
+        text-align: center;
+        overflow: hidden;
+    }
 }
 
 
@@ -501,6 +510,13 @@ form {
 
 form::placeholder {
     color: #000;
+}
+
+/* reCAPTCHA responsive */
+.g-recaptcha {
+    margin: 15px auto;
+    text-align: center;
+    overflow: hidden;
 }
 
 /* end contacto */
