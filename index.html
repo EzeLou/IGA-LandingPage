@@ -28,6 +28,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script> <!-- reCAPTCHA -->
 </head>
 
 <body>
@@ -674,7 +675,7 @@
                         <div class="container">
                             <h3>Formulario de Contacto</h3>
 
-                            <form method="post" name="consult" action="contact.php">
+                            <form method="post" name="consult" action="contact.php" id="contactForm">
                                 <input type="text" class="form-control" id="formNombre" name="name"
                                     placeholder="Nombre*" required>
 
@@ -686,16 +687,12 @@
 
                                 <textarea class="form-control" id="formConsulta" name="consulta"
                                     placeholder="Ingresa tu consulta aqui" rows="2"></textarea>
-
+                                
+                                <div class="g-recaptcha" data-sitekey="6Lc2quArAAAAAIOxcAKki0_87a3_gGh1CvOc_ZJv"></div>
                                 <br>
-
                                 <button class="btn btn-primary" role="button" type="submit">ENVIAR</button>
-
-
                             </form>
-
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -816,6 +813,26 @@
                     }
                 }
             });
+            
+            // Guard: require reCAPTCHA before submitting contact form
+            var contactForm = document.getElementById('contactForm');
+            if (contactForm) {
+                contactForm.addEventListener('submit', function (e) {
+                    try {
+                        if (typeof grecaptcha !== 'undefined') {
+                            var response = grecaptcha.getResponse();
+                            if (!response) {
+                                e.preventDefault();
+                                alert('Por favor completa el reCAPTCHA.');
+                            }
+                        }
+                    } catch (err) {
+                        // If grecaptcha is unavailable, block to be safe
+                        e.preventDefault();
+                        alert('No se pudo cargar reCAPTCHA. Intenta nuevamente.');
+                    }
+                });
+            }
         });
     </script>
 
