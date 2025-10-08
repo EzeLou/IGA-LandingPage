@@ -16,13 +16,22 @@ if (!$recaptchaResponse) {
 // reCAPTCHA secret key (v2 Checkbox)
 $recaptchaSecret = '6Lc2quArAAAAAEkb9e8gqPhmODA0zZH949dO7_CJ';
 
-$verifyUrl = 'https://www.google.com/recaptcha/api/siteverify'
-    . '?secret=' . urlencode($recaptchaSecret)
-    . '&response=' . urlencode($recaptchaResponse)
-    . '&remoteip=' . urlencode($_SERVER['REMOTE_ADDR'] ?? '');
 
-
-$verifyResponse = @file_get_contents($verifyUrl);
+// Verificar reCAPTCHA con cURL (POST)
+$ch = curl_init('https://www.google.com/recaptcha/api/siteverify');
+curl_setopt_array($ch, [
+    CURLOPT_RETURNTRANSFER => true,
+    CURLOPT_POST => true,
+    CURLOPT_POSTFIELDS => [
+        'secret' => $recaptchaSecret,
+        'response' => $recaptchaResponse,
+        'remoteip' => $_SERVER['REMOTE_ADDR'] ?? '',
+    ],
+    CURLOPT_TIMEOUT => 10,
+]);
+$verifyResponse = curl_exec($ch);
+$curlErr = curl_error($ch);
+curl_close($ch);
 if ($verifyResponse === false) {
     exit('No se pudo verificar el reCAPTCHA.');
 }
