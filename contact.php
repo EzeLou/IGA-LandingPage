@@ -9,6 +9,7 @@ $consulta = $_POST['consulta'];
 // validate recaptcha
 $recaptchaResponse = isset($_POST['g-recaptcha-response']) ? $_POST['g-recaptcha-response'] : '';
 if (!$recaptchaResponse) {
+    http_response_code(400);
     exit('Por favor completa el reCAPTCHA.');
 }
 
@@ -19,6 +20,7 @@ $verifyUrl = 'https://www.google.com/recaptcha/api/siteverify'
     . '?secret=' . urlencode($recaptchaSecret)
     . '&response=' . urlencode($recaptchaResponse)
     . '&remoteip=' . urlencode($_SERVER['REMOTE_ADDR'] ?? '');
+
 
 $verifyResponse = @file_get_contents($verifyUrl);
 if ($verifyResponse === false) {
